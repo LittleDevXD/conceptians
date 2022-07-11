@@ -1,0 +1,50 @@
+.flex.navbar {
+    align-items: center;
+    justify-content: space-between;
+}
+
+.right.navbar > ul > li {
+    list-style-type: none;
+    justify-content: space-around;
+    margin: 0 30px;
+}
+
+.right.navbar > ul > li > a {
+    position: relative;
+}
+
+.right.navbar > ul > li > a::before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 1.5px;
+    transform-origin: left;
+}
+
+.right.navbar > ul > li > a:hover::before {
+    background-color: var(--color-secondary);
+    height: 1.5px;
+    width: 100%;
+    transform-origin: right;
+    transition: all 500ms ease-in-out;
+}
+
+.nav-container {
+    position: relative;
+    background-color: var(--color-primary);
+    /* position: fixed; */
+    width: 100%;
+    
+}
+
+.nav-container::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: #c4c4c4;
+}

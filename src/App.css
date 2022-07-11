@@ -1,38 +1,47 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;700&family=Noto+Sans:wght@400;700&display=swap');
+
+*, *::after, *::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+:root {
+    --font-heading: 'Mulish', sans-serif;
+    --font-paragraph: 'Noto Sans', sans-serif;
+    --color-primary: #C2F1D9;
+    --color-secondary: #496076;
+    --color-black: #000000;
+    --color-white: #ffffff;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+a {
+    font-family: var(--font-paragraph);
+    text-decoration: none;
+    color: black;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+h1 {
+    font-family: var(--font-heading);
+    font-size: 42px;
+    line-height: 46px;
+    font-weight: 700;
+}
+
+p {
+    font-family: var(--font-paragraph);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 29px;
+}
+
+.container {
+  max-width: 1190px;
+  margin: 0 auto;
+}
+
+.flex {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
