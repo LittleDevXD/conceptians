@@ -1,9 +1,11 @@
-
+import SignUp from "../../components/sign-up/sign-up.component";
+import SignIn from "../../components/sign-in/sign-in.component";
 
 const Authentication = () => {
     return (
         <div>
-            This is sign in page.
+            <SignUp/>
+            <SignIn/>
         </div>
     )
 }
