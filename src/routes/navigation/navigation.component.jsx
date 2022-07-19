@@ -1,17 +1,16 @@
 import { useContext, Fragment } from 'react';
 import { Link, Outlet } from 'react-router-dom';
 
-import { UserContext } from '../../contexts/user-context/user-context.component';
+import { UserContext } from '../../contexts/user.context';
 import { signOutUser } from '../../utils/firebase/firebase.utils';
 
 import './navigation.styles.css';
 
 const Navigation = () => {
-    const { currentUser, setCurrentUser } = useContext(UserContext);
+    const { currentUser } = useContext(UserContext);
 
     const handleSignOut = async () => {
-        const res = await signOutUser();
-        setCurrentUser(res);
+        await signOutUser();
     }
 
     return (

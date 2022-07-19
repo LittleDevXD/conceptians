@@ -1,3 +1,5 @@
+import Footer from '../../components/footer/footer.component';
+
 import './home.styles.css';
 
 const Home = () => {
@@ -86,6 +88,7 @@ const Home = () => {
                     </div>
                 </div>
             </section>
+            <Footer/>
         </div>
     )
 }
